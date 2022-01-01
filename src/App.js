@@ -1,9 +1,13 @@
-import React, { useEffect, useState, useRef } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { connect } from "./redux/blockchain/blockchainActions";
-import { fetchData } from "./redux/data/dataActions";
-import * as s from "./styles/globalStyles";
-import styled from "styled-components";
+import React, {useEffect, useState, useRef} from "react";
+// import {useDispatch, useSelector} from "react-redux";
+// import {connect} from "./redux/blockchain/blockchainActions";
+// import {fetchData} from "./redux/data/dataActions";
+// import * as s from "./styles/globalStyles";
+// import styled from "styled-components";
+import MainLayout from "./components/mainLayout/MainLayout";
+
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './styles/App.scss';
 
 // const truncate = (input, len) =>
 //   input.length > len ? `${input.substring(0, len)}...` : input;
@@ -94,7 +98,7 @@ import styled from "styled-components";
 //   text-decoration: none;
 // `;
 //
-// function App() {
+function App() {
 //   const dispatch = useDispatch();
 //   const blockchain = useSelector((state) => state.blockchain);
 //   const data = useSelector((state) => state.data);
@@ -192,8 +196,11 @@ import styled from "styled-components";
 //   useEffect(() => {
 //     getData();
 //   }, [blockchain.account]);
-
+  
   return (
+    <div className="App">
+      <MainLayout/>
+    </div>
     // <s.Screen>
     //   <s.Container
     //     flex={1}
