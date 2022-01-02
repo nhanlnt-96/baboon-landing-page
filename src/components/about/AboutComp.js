@@ -1,9 +1,8 @@
 import React from 'react';
 import {Col, Container, Row} from "react-bootstrap";
-import Leaf from '../../assets/imgs/leaf.png';
+import {aboutData} from "../../configs/aboutData";
 
 import './AboutComp.scss';
-import {aboutData} from "../../configs/aboutData";
 
 const AboutComp = () => {
   return (
