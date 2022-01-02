@@ -3,11 +3,6 @@
   src: url(TTOctosquaresExp-Light.woff) format("woff");
 }
 
-@font-face {
-  font-family: Impact;
-  src: url(ImpactLTStd.woff) format("woff");
-}
-
 @mixin button($bcolor,
 $url,
 $x1,
@@ -21,4 +16,10 @@ $col) {
   mask-size: $x1 $y1;
   border: $bor;
   color: $col;
+}
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

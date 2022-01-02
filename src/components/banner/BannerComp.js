@@ -7,7 +7,7 @@ import './BannerComp.scss';
 const BannerComp = () => {
   return (
     <Container fluid className="banner-comp d-flex justify-content-center align-items-center">
-      <div className="bg-blur"/>
+      <div className="comp-bg-blur"/>
       <Container className="banner-comp-container">
         <Row className="banner-comp-header">
           <Col xl={6} lg={7} md={12} sm={12} className="banner-comp-left-side">
