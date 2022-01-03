@@ -1,0 +1,105 @@
+@import "../../styles/variables";
+@import "../../styles/rwd";
+
+.faqs-comp {
+  background-color: #de9536;
+  min-height: 100vh;
+  position: relative;
+
+  &-container {
+    padding: 20px 0;
+  }
+
+  &-content {
+    margin-top: 24px !important;
+    min-height: calc(100vh - 190px - 64px);
+  }
+
+  .comp-bg-blur {
+    background-color: rgba(222, 149, 54, .4)
+  }
+}
+
+.faqs-comp-container .faqs-comp-content {
+  .item {
+    z-index: 1;
+
+    &:not(:last-child) {
+      margin-bottom: 24px;
+    }
+
+    &-question .question-content, &-answer .answer-content {
+      border-radius: 15px;
+      position: relative;
+      padding: 15px;
+
+      .question, .answer {
+        font-size: 1.5rem;
+        @include mobile {
+          font-size: 1rem;
+        }
+      }
+
+      @include mobile {
+        width: 100% !important;
+      }
+    }
+
+    &-question .question-content {
+      min-height: 100px;
+      background-color: #ffffff;
+      width: 40%;
+      position: relative;
+
+      &:after {
+        content: "";
+        width: 95%;
+        position: absolute;
+        height: 20px;
+        box-shadow: rgba(255, 255, 255, .5) 0 10px 0;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 15px;
+      }
+
+      .question {
+        font-family: "Times New Roman", sans-serif;
+        text-align: center;
+      }
+
+      @include mobile{
+        min-height: 70px;
+      }
+    }
+
+    &-answer .answer-content {
+      margin-top: 12px;
+      min-height: 150px;
+      background-color: #e7cdab;
+      width: 60%;
+
+      &:after {
+        content: "";
+        width: 95%;
+        position: absolute;
+        height: 20px;
+        box-shadow: rgba(231, 205, 171, .5) 0 10px 0;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 15px;
+      }
+
+      .answer {
+        font-family: Arial, sans-serif;
+        font-style: italic;
+        text-align: center;
+      }
+
+      @include mobile {
+        margin-top: 24px;
+      }
+    }
+  }
+}

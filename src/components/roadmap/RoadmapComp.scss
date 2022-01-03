@@ -22,7 +22,7 @@
 
   .content-container {
     z-index: 1;
-    min-height: 300px;
+    min-height: 250px;
 
     &:not(:last-child) {
       margin-bottom: 24px;
@@ -66,13 +66,10 @@
 
         .question {
           font-family: "Times New Roman", sans-serif;
-          font-size: 3rem;
+          font-size: 2.5rem;
           color: #a47435;
           @include mobile {
             font-size: 1.5rem;
-          }
-          @include tablet {
-            font-size: 2.5rem;
           }
         }
 
@@ -83,7 +80,7 @@
             color: #ffffff;
             font-family: Arial, sans-serif;
             font-weight: bold;
-            font-size: 2rem;
+            font-size: 1.5rem;
 
             &:not(:last-child) {
               margin-bottom: 10px;
@@ -91,9 +88,6 @@
 
             @include mobile {
               font-size: 1.2rem;
-            }
-            @include tablet {
-              font-size: 1.5rem;
             }
           }
         }
@@ -112,11 +106,6 @@
       @include wide-desktop {
         width: 60%;
       }
-    }
-
-    @include mobile {
-      padding-left: 0 !important;
-      padding-right: 0 !important;
     }
   }
 }
