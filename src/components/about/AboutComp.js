@@ -8,7 +8,7 @@ const AboutComp = () => {
   return (
     <Container fluid className="about-comp comp-with-leaf">
       <div className="comp-bg-blur"/>
-      <Row className="leaf-top d-flex justify-content-center align-items-center"/>
+      <Row className="leaf-top"/>
       <Container className="about-comp-container">
         <Row className="about-comp-title d-flex justify-content-center align-items-center">
           <div className="comp-title">
