@@ -3,13 +3,7 @@
   src: url(TTOctosquaresExp-Light.woff) format("woff");
 }
 
-@mixin button($bcolor,
-$url,
-$x1,
-$y1,
-$bor,
-$col) {
-  background: $bcolor;
+@mixin button($url,$x1,$y1,$bor,$col) {
   -webkit-mask: url($url);
   mask: url($url);
   -webkit-mask-size: $x1 $y1;

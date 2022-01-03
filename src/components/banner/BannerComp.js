@@ -47,7 +47,7 @@ const BannerComp = () => {
                 <li className="item">Team</li>
               </ul>
             </div>
-            <div className="banner-btn">
+            <div className="comp-primary-btn banner-btn">
               <span className="mas">JOIN US</span>
               <button className="btn-item">JOIN US</button>
             </div>

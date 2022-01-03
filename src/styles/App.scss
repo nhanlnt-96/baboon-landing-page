@@ -55,9 +55,111 @@
 
 .comp-bg-blur {
   position: absolute;
-  background-color: rgba(255, 255, 255, .6);
+  z-index: 1;
   width: 100%;
   height: 100%;
   left: 0;
   top: 0;
+}
+
+.comp-primary-btn {
+  margin-top: 50px;
+  position: relative;
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  font-weight: 300;
+  transition: 0.5s;
+  letter-spacing: 1px;
+
+  .mas {
+    position: absolute;
+    color: #000;
+    text-align: center;
+    width: 101%;
+    margin-top: 17px;
+    overflow: hidden;
+    font-weight: bold;
+    font-size: 1.3rem;
+
+  }
+
+  .btn-item {
+    border-radius: 8px;
+    width: 101%;
+    height: 100%;
+    letter-spacing: 1px;
+    font-weight: bold;
+    padding: 15px;
+    color: #000000;
+    font-size: 1.3rem;
+    background-color: #b1c3b8;
+    @include button(
+                    "https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png",
+                    2300%,
+                    100%,
+                    none,
+                    #fff);
+    cursor: pointer;
+    -webkit-animation: ani2 0.7s steps(22) forwards;
+    animation: ani2 0.7s steps(22) forwards;
+
+    &:hover {
+      -webkit-animation: ani 0.7s steps(22) forwards;
+      animation: ani 0.7s steps(22) forwards;
+    }
+  }
+
+  @include mobile {
+    margin-top: 24px;
+  }
+}
+
+@-webkit-keyframes ani {
+  from {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+
+  to {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
+}
+
+@keyframes ani {
+  from {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+
+  to {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
+}
+
+@-webkit-keyframes ani2 {
+  from {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
+
+  to {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+}
+
+@keyframes ani2 {
+  from {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
+
+  to {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
 }
