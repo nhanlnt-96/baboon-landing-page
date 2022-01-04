@@ -1,8 +1,3 @@
-@font-face {
-  font-family: TTOctoSquaresLight;
-  src: url(TTOctosquaresExp-Light.woff) format("woff");
-}
-
 @mixin button($url,$x1,$y1,$bor,$col) {
   -webkit-mask: url($url);
   mask: url($url);
