@@ -10,22 +10,22 @@ import TeamComp from "../team/TeamComp";
 const MainLayout = () => {
   return (
     <Container fluid className="main-layout-comp">
-      <Row>
+      <Row id="home">
         <BannerComp/>
       </Row>
-      <Row>
+      <Row id="about">
         <AboutComp/>
       </Row>
-      <Row>
+      <Row id="collection">
         <CollectionComp/>
       </Row>
-      <Row>
+      <Row id="roadmap">
         <RoadmapComp/>
       </Row>
-      <Row>
+      <Row id="faqs">
         <FAQSComp/>
       </Row>
-      <Row>
+      <Row id="team">
         <TeamComp/>
       </Row>
     </Container>

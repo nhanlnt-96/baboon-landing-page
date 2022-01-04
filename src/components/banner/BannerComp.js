@@ -3,6 +3,7 @@ import {Col, Container, Row} from "react-bootstrap";
 import {BiSearch, ImFacebook, SiInstagram, SiTwitter} from "react-icons/all";
 
 import './BannerComp.scss';
+import {bannerData} from "../../configs/bannerData";
 
 const BannerComp = () => {
   return (
@@ -41,10 +42,13 @@ const BannerComp = () => {
           <Col className="banner-comp-right-side">
             <div className="page-menu">
               <ul className="menu-item d-flex flex-column justify-content-center align-items-end">
-                <li className="item">About</li>
-                <li className="item">Collection</li>
-                <li className="item">Roadmap</li>
-                <li className="item">Team</li>
+                {
+                  bannerData.map((val, index) => (
+                    <a className="item" href={val.path}>
+                      <li>{val.label}</li>
+                    </a>
+                  ))
+                }
               </ul>
             </div>
             <div className="comp-primary-btn banner-btn">
