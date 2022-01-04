@@ -23,7 +23,7 @@ const RoadmapComp = () => {
                 <div className="item">
                   <div className="content-number d-flex justify-content-center align-items-center">
                     <div className="number-border d-flex justify-content-center align-items-center">
-                      <p className="number">{index + 1}</p>
+                      <p className="number">{mainContent.percent}</p>
                     </div>
                   </div>
                   <div className="content-desc">
