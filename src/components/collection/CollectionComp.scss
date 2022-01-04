@@ -12,7 +12,8 @@
   }
 
   &-content {
-    min-height: calc(100vh - 190px - 40px);
+    margin-top: 24px !important;
+    min-height: calc(100vh - 190px - 64px);
   }
 
   .comp-bg-blur {
