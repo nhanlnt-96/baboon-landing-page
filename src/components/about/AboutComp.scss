@@ -17,35 +17,19 @@
 }
 
 .about-comp-container .about-comp-content {
-  padding: 20px 0;
+  margin-top: 24px;
+  min-height: calc(100vh - 190px - 64px);
 
-  .item {
-    padding: 10px;
+  .left-side, .right-side {
     z-index: 1;
-
-    &-img {
-      width: 200px;
-      height: 300px;
-      position: relative;
-
-      .img-border {
-        position: absolute;
-        top: 20px;
-        width: 100%;
-        height: 100%;
-        overflow: hidden;
-        background: url("../../assets/imgs/imageBorder.gif") no-repeat center;
-        background-size: 100% 100%;
-
-        img {
-          width: 90%;
-          height: 90%;
-          object-fit: cover;
-        }
-      }
+    @include mobile {
+      padding-right: 0 !important;
+      padding-left: 0 !important;
     }
+  }
 
-    &-content {
+  .left-side {
+    &-container {
       background-color: #f5deb3;
       padding: 30px 20px 20px 20px;
       border-radius: 20px;
@@ -60,23 +44,34 @@
           margin-top: 24px;
         }
       }
+    }
 
-      @include mobile {
+    @include mobile {
+      order: 2;
+      margin-top: 12px;
+    }
+  }
+
+  .right-side {
+    &-container {
+      width: 90%;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      border-radius: 20px;
+      overflow: hidden;
+
+      img {
         width: 100%;
       }
+    }
 
-      @include tablet {
-        width: 100%;
-      }
+    @include mobile {
+      order: 1;
+      width: 100%;
+    }
 
-      @include desktop {
-        width: 90%;
-      }
-
-
-      @include wide-desktop {
-        width: 80%;
-      }
+    @include tablet {
+      width: 100%;
     }
   }
 }
