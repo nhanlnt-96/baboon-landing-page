@@ -2,7 +2,8 @@ export const roadmapData = [
   {
     percent: "10%",
     question: "What does a Baboon learn first in school?",
-    answer: ["Calculated and rated based on the reported intake of healthy foods and unhealthy foods."]
+    answer: ["The Apey-ceses! The club is open!","We invite all red bottom lovers to join the discord and be a part" +
+    " of the babblings bunch."]
   },
   {
     percent: "30%",
