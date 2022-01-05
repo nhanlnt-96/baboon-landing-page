@@ -6,8 +6,8 @@ export const roadmapData = [
   },
   {
     percent: "30%",
-    question: "What kind of monkey flies to school?",
-    answer: ["A hot air baboon. We are gaining momentum!!!", "10 random owners will each receive a 1:1 special Babbling Baboon Club NFT."]
+    question: "What kind of monkey flies to school? ... A hot air baboon!",
+    answer: ["We are gaining momentum!!!", "10 random owners will each receive a 1:1 special Babbling Baboon Club NFT."]
   },
   {
     percent: "50%",
