@@ -27,7 +27,9 @@ const RoadmapComp = () => {
                     </div>
                   </div>
                   <div className="content-desc">
-                    <h6 className="question">{mainContent.question}</h6>
+                    <h6 className="question">{mainContent.question[0]}<span
+                      style={{color: "#000000"}}>{mainContent.question[1]}</span>
+                    </h6>
                     <div className="answer-container">
                       {
                         mainContent.answer.map((item, key) => (
