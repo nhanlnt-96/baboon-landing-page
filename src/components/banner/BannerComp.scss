@@ -20,6 +20,18 @@
     min-height: 100vh;
   }
 
+  @include mobile {
+    padding: 24px 0;
+    min-height: 100vh;
+    height: unset;
+  }
+
+  @include tablet {
+    padding: 24px 0;
+    min-height: 100vh;
+    height: unset;
+  }
+
   .comp-bg-blur {
     background-color: rgba(255, 255, 255, .6);
   }
@@ -87,79 +99,111 @@
   }
 }
 
-.banner-comp-container .banner-comp-content .banner-comp {
-  &-left-side .banner-content {
-    .banner-social {
-      margin-bottom: 50px;
+.banner-comp-container .banner-comp-content {
+  .banner-comp {
+    &-left-side .banner-content {
+      .banner-social {
+        margin-bottom: 50px;
 
-      .social-item {
-        font-size: 1.8rem;
-        cursor: pointer;
+        .social-item {
+          font-size: 1.8rem;
+          cursor: pointer;
+        }
+
+        @include mobile {
+          margin-bottom: 24px;
+        }
       }
 
-      @include mobile {
-        margin-bottom: 24px;
+      .banner-desc .desc-item {
+        margin-bottom: 0;
+        font-size: 2rem;
+        font-family: 'Inika', serif;
+        font-weight: 700;
+        @include mobile {
+          font-size: 1.5rem;
+          text-align: center;
+          &:not(:last-child) {
+            margin-bottom: 10px;
+          }
+        }
       }
     }
 
-    .banner-desc .desc-item {
-      margin-bottom: 0;
-      font-size: 2rem;
-      font-family: 'Inika', serif;
-      font-weight: 700;
-      @include mobile {
-        font-size: 1.5rem;
-        text-align: center;
-        &:not(:last-child) {
-          margin-bottom: 10px;
+    &-right-side {
+      .page-menu .menu-item {
+        width: 100%;
+
+        .item {
+          font-family: 'Inika', serif;
+          width: 100%;
+          border-bottom: 2px solid #000000;
+          padding: 15px 0;
+          text-align: right;
+          font-weight: 400;
+          font-size: 1.4rem;
+          text-shadow: 1px 1px #000000;
+          cursor: pointer;
+          position: relative;
+          overflow: hidden;
+          text-decoration: none;
+          color: #000000;
+
+          &:before {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, .4);
+            transition: .5s;
+            z-index: -1;
+          }
+
+          &:hover:before {
+            top: 0;
+          }
+
+          @include mobile {
+            font-size: 1.2rem;
+          }
         }
+      }
+
+      @include mobile {
+        margin-top: 24px;
       }
     }
   }
 
-  &-right-side {
-    .page-menu .menu-item {
-      width: 100%;
+  @include mobile {
+    flex-direction: column;
+  }
+}
 
-      .item {
-        font-family: 'Inika', serif;
-        width: 100%;
-        border-bottom: 2px solid #000000;
-        padding: 15px 0;
-        text-align: right;
-        font-weight: 400;
-        font-size: 1.4rem;
-        text-shadow: 1px 1px #000000;
-        cursor: pointer;
-        position: relative;
-        overflow: hidden;
-        text-decoration: none;
-        color: #000000;
+.banner-comp-container .banner-comp-mint-connected {
+  margin-top: 24px;
 
-        &:before {
-          content: "";
-          position: absolute;
-          top: 100%;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          background-color: rgba(255, 255, 255, .4);
-          transition: .5s;
-          z-index: -1;
-        }
-
-        &:hover:before {
-          top: 0;
-        }
-
-        @include mobile {
-          font-size: 1.2rem;
-        }
-      }
+  .mint-box {
+    &-container {
+      z-index: 1;
+      width: 60%;
+      padding-right: 0;
+      padding-left: 0;
     }
 
     @include mobile {
-      margin-top: 24px;
+      padding: 0 !important;
+      &-container {
+        width: 100%;
+      }
+    }
+    @include tablet {
+      padding: 0 !important;
+      &-container {
+        width: 80%;
+      }
     }
   }
 }

@@ -11,7 +11,7 @@ const FAQComp = () => {
       <Row className="leaf-top"/>
       <Container className="faqs-comp-container">
         <Row className="faqs-comp-title d-flex justify-content-center align-items-center">
-          <div className="comp-title">
+          <div data-aos="fade-down" className="comp-title">
             <h6 className="title">FAQ</h6>
           </div>
         </Row>
@@ -19,12 +19,12 @@ const FAQComp = () => {
           {
             faqsData.map((mainContent, index) => (
               <div key={index} className="item">
-                <div className="item-question d-flex align-items-center">
+                <div data-aos="fade-right" className="item-question d-flex align-items-center">
                   <div className="question-content">
                     <p className="question">{mainContent.question}</p>
                   </div>
                 </div>
-                <div className="item-answer d-flex align-items-center justify-content-end">
+                <div data-aos="fade-left" className="item-answer d-flex align-items-center justify-content-end">
                   <div className="answer-content">
                     {
                       mainContent.answer.map((answer, key) => (

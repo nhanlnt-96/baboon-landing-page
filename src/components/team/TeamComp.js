@@ -12,7 +12,7 @@ const TeamComp = () => {
       <Row className="leaf-top"/>
       <Container className="team-comp-container">
         <Row className="team-comp-title d-flex justify-content-center align-items-center">
-          <div className="comp-title">
+          <div data-aos="fade-down" className="comp-title">
             <h6 className="title">TEAM</h6>
           </div>
         </Row>
@@ -20,7 +20,8 @@ const TeamComp = () => {
           <div className="content-container justify-content-center align-items-center">
             {
               teamData.map((val, index) => (
-                <div className="team-detail d-flex flex-column justify-content-center align-items-center">
+                <div data-aos="fade-up"
+                     className="team-detail d-flex flex-column justify-content-center align-items-center">
                   <div className="team-avatar">
                     <img src={val.avatar} alt={`team-${val.name}`}/>
                   </div>

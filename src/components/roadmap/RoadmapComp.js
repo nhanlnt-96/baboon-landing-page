@@ -11,14 +11,14 @@ const RoadmapComp = () => {
       <Row className="leaf-top"/>
       <Container className="roadmap-comp-container">
         <Row className="roadmap-comp-title d-flex justify-content-center align-items-center">
-          <div className="comp-title">
+          <div data-aos="fade-down" className="comp-title">
             <h6 className="title">ROADMAP</h6>
           </div>
         </Row>
         <Row className="roadmap-comp-content">
           {
             roadmapData.map((mainContent, index) => (
-              <div key={index}
+              <div key={index} data-aos={(index % 2 === 0) ? 'fade-right' : 'fade-left'}
                    className={`content-container d-flex align-items-center ${(index % 2 === 0) ? "justify-content-start" : "justify-content-end"}`}>
                 <div className="item">
                   <div className="content-number d-flex justify-content-center align-items-center">
@@ -27,9 +27,7 @@ const RoadmapComp = () => {
                     </div>
                   </div>
                   <div className="content-desc">
-                    <h6 className="question">{mainContent.question[0]}<span
-                      style={{color: "#000000"}}>{mainContent.question[1]}</span>
-                    </h6>
+                    <h6 className="question">{mainContent.question}</h6>
                     <div className="answer-container">
                       {
                         mainContent.answer.map((item, key) => (

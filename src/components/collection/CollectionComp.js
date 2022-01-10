@@ -11,7 +11,7 @@ const CollectionComp = () => {
       <Row className="leaf-top"/>
       <Container className="collection-comp-container">
         <Row className="collection-comp-title d-flex justify-content-center align-items-center">
-          <div className="comp-title">
+          <div data-aos="fade-down" className="comp-title">
             <h6 className="title">COLLECTION</h6>
           </div>
         </Row>
@@ -19,11 +19,11 @@ const CollectionComp = () => {
           <div className="collection-items">
             {
               collectionImgData.map((val, index) => (
-                <img src={val} alt="baboon-collections"/>
+                <img data-aos="zoom-in" src={val} alt="baboon-collections"/>
               ))
             }
           </div>
-          <div className="collection-btn">
+          <div data-aos="zoom-in" className="collection-btn">
             <div className="comp-primary-btn">
               <span className="mas">SHOW MORE</span>
               <button className="btn-item">SHOW MORE</button>
