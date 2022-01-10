@@ -11,14 +11,14 @@ const RoadmapComp = () => {
       <Row className="leaf-top"/>
       <Container className="roadmap-comp-container">
         <Row className="roadmap-comp-title d-flex justify-content-center align-items-center">
-          <div className="comp-title">
+          <div data-aos="fade-down" className="comp-title">
             <h6 className="title">ROADMAP</h6>
           </div>
         </Row>
         <Row className="roadmap-comp-content">
           {
             roadmapData.map((mainContent, index) => (
-              <div key={index}
+              <div key={index} data-aos={(index % 2 === 0) ? 'fade-right' : 'fade-left'}
                    className={`content-container d-flex align-items-center ${(index % 2 === 0) ? "justify-content-start" : "justify-content-end"}`}>
                 <div className="item">
                   <div className="content-number d-flex justify-content-center align-items-center">

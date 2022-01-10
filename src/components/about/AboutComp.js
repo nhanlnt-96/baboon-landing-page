@@ -17,13 +17,13 @@ const AboutComp = () => {
       <Row className="leaf-top"/>
       <Container className="about-comp-container">
         <Row className="about-comp-title d-flex justify-content-center align-items-center">
-          <div className="comp-title">
+          <div data-aos="fade-down" className="comp-title">
             <h6 className="title">ABOUT</h6>
           </div>
         </Row>
         <Row className="about-comp-content">
           <Col xl={6} lg={7} md={7} sm={12} className="left-side d-flex justify-content-center align-items-center">
-            <div className="left-side-container">
+            <div data-aos="fade-right" className="left-side-container">
               {
                 aboutData.map((val, index) => (
                   <p key={index} className="content">{val}</p>
@@ -35,7 +35,7 @@ const AboutComp = () => {
             <div className="right-side-container">
               {
                 aboutImg.map((val, index) => (
-                  <img key={index} src={val} alt="about-baboon"/>
+                  <img data-aos="zoom-in" key={index} src={val} alt="about-baboon"/>
                 ))
               }
             </div>

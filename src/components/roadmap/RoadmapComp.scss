@@ -68,6 +68,11 @@
           font-family: 'Inika', serif;
           font-size: 2.5rem;
           color: #a47435;
+
+          &:last-child {
+            color: #000000;
+          }
+
           @include mobile {
             font-size: 1.5rem;
           }
