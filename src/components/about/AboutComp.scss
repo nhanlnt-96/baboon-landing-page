@@ -59,15 +59,15 @@
       img {
         width: 100%;
       }
-    }
 
-    @include mobile {
-      order: 1;
-      width: 100%;
-    }
+      @include mobile {
+        order: 1;
+        width: 100%;
+      }
 
-    @include tablet {
-      width: 100%;
+      @include tablet {
+        width: 100%;
+      }
     }
   }
 }

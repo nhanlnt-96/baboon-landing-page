@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import {Col, Container, Row} from "react-bootstrap";
-import {BiSearch, ImFacebook, SiInstagram, SiTwitter} from "react-icons/all";
+import {BiSearch, SiDiscord, SiInstagram, SiTwitter} from "react-icons/all";
 import {bannerData} from "../../configs/bannerData";
 import {useDispatch, useSelector} from "react-redux";
 import {fetchData} from "../../redux/data/dataActions";
@@ -140,9 +140,10 @@ const BannerComp = () => {
           <Col className="banner-comp-left-side">
             <div className="banner-content">
               <div className="banner-social d-flex justify-content-evenly align-items-center">
-                <SiInstagram data-aos="zoom-in" className="social-item"/>
-                <ImFacebook data-aos="zoom-in" className="social-item"/>
-                <SiTwitter data-aos="zoom-in" className="social-item"/>
+                <a data-aos="zoom-in" className="social-item"
+                   href="https://www.instagram.com/babblingbaboonclub/"><SiInstagram/></a>
+                <a data-aos="zoom-in" className="social-item" href="https://discord.gg/YADkczCU"><SiDiscord/></a>
+                <a data-aos="zoom-in" className="social-item" href="https://twitter.com/BaboonClubNFT"><SiTwitter/></a>
               </div>
               <div data-aos="fade-up" className="banner-desc">
                 <p className="desc-item">NFT Community fo all red bottom lovers</p>
