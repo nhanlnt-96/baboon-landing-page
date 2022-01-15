@@ -33,9 +33,9 @@ const TeamComp = () => {
             }
           </div>
           <div className="team-social d-flex justify-content-center align-items-center">
-            <a href="#" className="item" target="_blank"><SiInstagram/></a>
-            <a href="#" className="item" target="_blank"><SiDiscord/></a>
-            <a href="#" className="item" target="_blank"><ImTwitter/></a>
+            <a href="https://www.instagram.com/babblingbaboonclub/" className="item" target="_blank"><SiInstagram/></a>
+            <a href="https://discord.gg/YADkczCU" className="item" target="_blank"><SiDiscord/></a>
+            <a href="https://twitter.com/BaboonClubNFT" className="item" target="_blank"><ImTwitter/></a>
           </div>
         </Row>
       </Container>

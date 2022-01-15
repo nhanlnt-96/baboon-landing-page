@@ -9,7 +9,7 @@ import TeamComp from "../team/TeamComp";
 
 const MainLayout = () => {
   return (
-    <Container fluid className="main-layout-comp">
+    <Container fluid className="main-layout-comp" style={{overflow: "hidden"}}>
       <Row id="home">
         <BannerComp/>
       </Row>
