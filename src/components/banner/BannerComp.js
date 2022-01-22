@@ -7,7 +7,7 @@ import {fetchData} from "../../redux/data/dataActions";
 import * as s from "../../styles/globalStyles";
 import {connect} from "../../redux/blockchain/blockchainActions";
 import {ResponsiveWrapper, StyledButton, StyledLink, StyledRoundButton, truncate} from "./styleComponent";
-import {notification} from 'antd';
+// import {notification} from 'antd';
 
 import './BannerComp.scss';
 
@@ -113,13 +113,13 @@ const BannerComp = () => {
     <Container fluid className="banner-comp d-flex justify-content-center align-items-center">
       <div className="comp-bg-blur"/>
       <Container className="banner-comp-container">
-        {
-          blockchain.errorMsg && notification.info({
-            message: `Error`,
-            description: blockchain.errorMsg,
-            placement: 'bottomRight',
-          })
-        }
+        {/*{*/}
+        {/*  blockchain.errorMsg && notification.info({*/}
+        {/*    message: `Error`,*/}
+        {/*    description: blockchain.errorMsg,*/}
+        {/*    placement: 'bottomRight',*/}
+        {/*  })*/}
+        {/*}*/}
         <Row className="banner-comp-header">
           <Col data-aos="fade-up"
                data-aos-anchor-placement="bottom-bottom" xl={6} lg={7} md={12} sm={12}
@@ -130,9 +130,16 @@ const BannerComp = () => {
           </Col>
           <Col xl={6} lg={5} md={12} sm={12}
                className="banner-comp-right-side d-flex justify-content-center align-items-center">
-            <div data-aos="fade-up" className="banner-search d-flex justify-content-center align-items-center">
-              <BiSearch className="search-icon"/>
-              <input type="text" placeholder="Search" className="search-input"/>
+            <div className="page-menu">
+              <ul className="menu-item d-flex flex-column justify-content-center align-items-end">
+                {
+                  bannerData.map((val, index) => (
+                    <a data-aos="fade-up" className="item" href={val.path}>
+                      <li>{val.label}</li>
+                    </a>
+                  ))
+                }
+              </ul>
             </div>
           </Col>
         </Row>
@@ -147,23 +154,12 @@ const BannerComp = () => {
               </div>
               <div data-aos="fade-up" className="banner-desc">
                 <p className="desc-item">NFT Community fo all red bottom lovers</p>
-                <p className="desc-item">A collection of 2,222 of the most Babbling Baboons</p>
+                <p className="desc-item">A collection of 2,222 of the most BABBLING BABOONS</p>
                 <p className="desc-item">Mint cost will be 0.04 eth + gas</p>
               </div>
             </div>
           </Col>
           <Col className="banner-comp-right-side">
-            <div className="page-menu">
-              <ul className="menu-item d-flex flex-column justify-content-center align-items-end">
-                {
-                  bannerData.map((val, index) => (
-                    <a data-aos="fade-up" className="item" href={val.path}>
-                      <li>{val.label}</li>
-                    </a>
-                  ))
-                }
-              </ul>
-            </div>
             {
               !blockchain.account && (
                 <div data-aos="zoom-in" className="comp-primary-btn banner-btn">

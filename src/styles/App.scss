@@ -9,22 +9,6 @@
   font-family: 'Inika', serif;
 }
 
-.comp-title {
-  background: url("../assets/imgs/titleShape.svg") no-repeat center;
-  background-size: 100% 100%;
-  width: 320px;
-  height: 190px;
-  @include flex-center;
-  z-index: 1;
-
-  .title {
-    font-family: 'Inika', serif;
-    font-weight: 700;
-    font-size: 2rem;
-    text-transform: uppercase;
-  }
-}
-
 .comp-with-leaf {
   .leaf-top {
     width: 50%;
@@ -74,7 +58,7 @@
   transition: 0.5s;
   letter-spacing: 1px;
 
-  .mas{
+  .mas {
     position: absolute;
     color: #000;
     text-align: center;

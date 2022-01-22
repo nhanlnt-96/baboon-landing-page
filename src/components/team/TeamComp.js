@@ -4,6 +4,7 @@ import {teamData} from "../../configs/teamData";
 import {ImTwitter, SiDiscord, SiInstagram} from "react-icons/all";
 
 import './TeamComp.scss';
+import TitleComp from "../title/TitleComp";
 
 const TeamComp = () => {
   return (
@@ -11,11 +12,7 @@ const TeamComp = () => {
       <div className="comp-bg-blur"/>
       <Row className="leaf-top"/>
       <Container className="team-comp-container">
-        <Row className="team-comp-title d-flex justify-content-center align-items-center">
-          <div data-aos="fade-down" className="comp-title">
-            <h6 className="title">TEAM</h6>
-          </div>
-        </Row>
+        <TitleComp title={"team"}/>
         <Row className="team-comp-content">
           <div className="content-container justify-content-center align-items-center">
             {

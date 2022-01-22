@@ -1,8 +1,9 @@
-import React from 'react';
+import React from "react";
 import {Container, Row} from "react-bootstrap";
 import {faqsData} from "../../configs/faqsData";
 
-import './FAQComp.scss';
+import "./FAQComp.scss";
+import TitleComp from "../title/TitleComp";
 
 const FAQComp = () => {
   return (
@@ -10,11 +11,7 @@ const FAQComp = () => {
       <div className="comp-bg-blur"/>
       <Row className="leaf-top"/>
       <Container className="faqs-comp-container">
-        <Row className="faqs-comp-title d-flex justify-content-center align-items-center">
-          <div data-aos="fade-down" className="comp-title">
-            <h6 className="title">FAQ</h6>
-          </div>
-        </Row>
+        <TitleComp title={"FAQ"}/>
         <Row className="faqs-comp-content">
           {
             faqsData.map((mainContent, index) => (
