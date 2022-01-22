@@ -7,7 +7,7 @@ import {fetchData} from "../../redux/data/dataActions";
 import * as s from "../../styles/globalStyles";
 import {connect} from "../../redux/blockchain/blockchainActions";
 import {ResponsiveWrapper, StyledButton, StyledLink, StyledRoundButton, truncate} from "./styleComponent";
-// import {notification} from 'antd';
+import {notification} from 'antd';
 
 import './BannerComp.scss';
 
