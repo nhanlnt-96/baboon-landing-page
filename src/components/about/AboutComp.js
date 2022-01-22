@@ -1,12 +1,13 @@
-import React from 'react';
+import React from "react";
 import {Col, Container, Row} from "react-bootstrap";
 import {aboutData} from "../../configs/aboutData";
-import AboutImg1 from '../../assets/imgs/aboutImage1.png';
-import AboutImg2 from '../../assets/imgs/aboutImage2.png';
-import AboutImg3 from '../../assets/imgs/aboutImage3.png';
-import AboutImg4 from '../../assets/imgs/aboutImage4.png';
+import AboutImg1 from "../../assets/imgs/aboutImage1.png";
+import AboutImg2 from "../../assets/imgs/aboutImage2.png";
+import AboutImg3 from "../../assets/imgs/aboutImage3.png";
+import AboutImg4 from "../../assets/imgs/aboutImage4.png";
+import TitleComp from "../title/TitleComp";
 
-import './AboutComp.scss';
+import "./AboutComp.scss";
 
 const aboutImg = [AboutImg1, AboutImg2, AboutImg3, AboutImg4];
 
@@ -16,11 +17,7 @@ const AboutComp = () => {
       <div className="comp-bg-blur"/>
       <Row className="leaf-top"/>
       <Container className="about-comp-container">
-        <Row className="about-comp-title d-flex justify-content-center align-items-center">
-          <div data-aos="fade-down" className="comp-title">
-            <h6 className="title">ABOUT</h6>
-          </div>
-        </Row>
+        <TitleComp title={"ABOUT"}/>
         <Row className="about-comp-content">
           <Col xl={6} lg={7} md={7} sm={12} className="left-side d-flex justify-content-center align-items-center">
             <div data-aos="fade-right" className="left-side-container">
