@@ -149,12 +149,12 @@ const BannerComp = () => {
               <div className="banner-social d-flex justify-content-evenly align-items-center">
                 <a data-aos="zoom-in" className="social-item"
                    href="https://www.instagram.com/babblingbaboonclub/"><SiInstagram/></a>
-                <a data-aos="zoom-in" className="social-item" href="https://discord.gg/YADkczCU"><SiDiscord/></a>
+                <a data-aos="zoom-in" className="social-item" href="https://discord.gg/cBknGt3ksN"><SiDiscord/></a>
                 <a data-aos="zoom-in" className="social-item" href="https://twitter.com/BaboonClubNFT"><SiTwitter/></a>
               </div>
               <div data-aos="fade-up" className="banner-desc">
                 <p className="desc-item">NFT Community fo all red bottom lovers</p>
-                <p className="desc-item">A collection of 2,222 of the most BABBLING BABOONS</p>
+                <p className="desc-item">A collection of 2,222 of the most Babbling Baboon</p>
                 <p className="desc-item">Mint cost will be 0.04 eth + gas</p>
               </div>
             </div>

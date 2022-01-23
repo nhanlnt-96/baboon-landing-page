@@ -1,6 +1,6 @@
 {
-  "name": "babbling_baboons",
-  "version": "2.0.0",
+  "name": "babbling_baboon",
+  "version": "1.0.0",
   "description": "",
   "private": true,
   "dependencies": {
@@ -24,7 +24,7 @@
     "web3": "^1.5.1",
     "web3-eth-contract": "^1.5.2"
   },
-  "author": "Babbling Baboons",
+  "author": "Babbling Baboon",
   "license": "MIT",
   "scripts": {
     "start": "react-scripts start",
