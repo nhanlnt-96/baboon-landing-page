@@ -1,5 +1,5 @@
 {
-  "name": "babbling_baboons",
+  "name": "babbling_baboon",
   "version": "1.0.0",
   "description": "",
   "private": true,
@@ -24,7 +24,7 @@
     "web3": "^1.5.1",
     "web3-eth-contract": "^1.5.2"
   },
-  "author": "Babbling Baboons",
+  "author": "Babbling Baboon",
   "license": "MIT",
   "scripts": {
     "start": "react-scripts start",
