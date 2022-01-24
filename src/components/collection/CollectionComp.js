@@ -8,19 +8,11 @@ import TitleComp from "../title/TitleComp";
 
 const CollectionComp = () => {
   return (
-    <Container fluid className="collection-comp comp-with-leaf">
-      <div className="comp-bg-blur"/>
+    <Container fluid className="collection-comp comp-with-leaf comp-bg-color">
       <Row className="leaf-top"/>
       <Container className="collection-comp-container">
         <TitleComp title={"collection"}/>
         <Row className="collection-comp-content d-flex justify-content-center align-items-center">
-          {/*<div className="collection-items">*/}
-          {/*  {*/}
-          {/*    collectionImgData.map((val, index) => (*/}
-          {/*      <img data-aos="zoom-in" src={val} alt="baboon-collections"/>*/}
-          {/*    ))*/}
-          {/*  }*/}
-          {/*</div>*/}
           <SliderComp slideImages={collectionImgData}/>
         </Row>
       </Container>

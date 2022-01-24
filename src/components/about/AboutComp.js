@@ -1,7 +1,7 @@
 import React from "react";
 import {Col, Container, Row} from "react-bootstrap";
 import {aboutData} from "../../configs/aboutData";
-import AboutImg1 from "../../assets/imgs/aboutImage1.png";
+import AboutImg1 from "../../assets/imgs/collectionImg1.png";
 import AboutImg2 from "../../assets/imgs/aboutImage2.png";
 import AboutImg3 from "../../assets/imgs/aboutImage3.png";
 import AboutImg4 from "../../assets/imgs/aboutImage4.png";
@@ -13,7 +13,7 @@ const aboutImg = [AboutImg1, AboutImg2, AboutImg3, AboutImg4];
 
 const AboutComp = () => {
   return (
-    <Container fluid className="about-comp comp-with-leaf">
+    <Container fluid className="about-comp comp-with-leaf comp-bg-color">
       <div className="comp-bg-blur"/>
       <Row className="leaf-top"/>
       <Container className="about-comp-container">

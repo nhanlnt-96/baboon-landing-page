@@ -2,7 +2,6 @@
 @import "../../styles/rwd";
 
 .faqs-comp {
-  background-color: #ED789F;
   min-height: 100vh;
   position: relative;
 
@@ -96,7 +95,7 @@
         font-family: 'Inika', serif;
         font-style: italic;
         text-align: center;
-        font-weight: 400;
+        font-weight: 700;
       }
 
       @include mobile {
