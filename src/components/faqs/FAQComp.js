@@ -7,8 +7,7 @@ import TitleComp from "../title/TitleComp";
 
 const FAQComp = () => {
   return (
-    <Container fluid className="faqs-comp comp-with-leaf">
-      <div className="comp-bg-blur"/>
+    <Container fluid className="faqs-comp comp-with-leaf comp-bg-color">
       <Row className="leaf-top"/>
       <Container className="faqs-comp-container">
         <TitleComp title={"FAQ"}/>

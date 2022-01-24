@@ -1,5 +1,5 @@
-import Ava1 from '../assets/imgs/aboutImage4.png';
-import Ava2 from '../assets/imgs/aboutImage3.png';
+import Ava1 from '../assets/imgs/bigTAva.png';
+import Ava2 from '../assets/imgs/henuxAva.png';
 import Ava3 from '../assets/imgs/teamAva1.png';
 import Ava4 from '../assets/imgs/aboutImage1.png';
 
