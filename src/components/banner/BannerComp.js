@@ -71,7 +71,7 @@ const BannerComp = () => {
           <Col className="banner-comp-right-side">
             {
               !blockchain.account && (
-                <div data-aos="zoom-in" className="comp-primary-btn banner-btn">
+                <div data-aos="zoom-in" className="comp-primary-btn banner-btn d-flex justify-content-center align-items-center">
                   <span className="mas">THANKS</span>
                   <button onClick={(e) => {
                     e.preventDefault();
