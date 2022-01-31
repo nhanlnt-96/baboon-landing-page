@@ -13,7 +13,7 @@ const aboutImg = [AboutImg1, AboutImg2, AboutImg3, AboutImg4];
 
 const AboutComp = () => {
   return (
-    <Container fluid className="about-comp comp-with-leaf comp-bg-color">
+    <Container fluid className="about-comp comp-with-leaf comp-bg-grey">
       <div className="comp-bg-blur"/>
       <Row className="leaf-top"/>
       <Container className="about-comp-container">

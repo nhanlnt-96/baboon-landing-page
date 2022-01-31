@@ -8,7 +8,7 @@ import TitleComp from "../title/TitleComp";
 
 const TeamComp = () => {
   return (
-    <Container fluid className="team-comp comp-with-leaf comp-bg-color">
+    <Container fluid className="team-comp comp-with-leaf comp-bg-grey">
       <div className="comp-bg-blur"/>
       <Row className="leaf-top"/>
       <Container className="team-comp-container">
